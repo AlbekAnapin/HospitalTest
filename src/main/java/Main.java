@@ -28,8 +28,7 @@ public class Main {
         WebElement login = driver.findElement(By.xpath("//button[text()= 'Войти']"));
         login.click();
 
-        WebElement element = (new WebDriverWait(driver, Duration.ofSeconds(20))
-         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@class='auth-service']"))));
+        WaitUntil.WaitElement(driver, By.xpath("//li[@class='auth-service']"));
         driver.findElement(By.xpath("//li[@class='auth-service']")).click();
 
 
