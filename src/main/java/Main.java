@@ -15,7 +15,7 @@ public class Main {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\PC-Damu-2\\Desktop\\autoTest\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
-        driver.get("https://uat.dmed.kz");
+        /*driver.get("https://uat.dmed.kz");
 
         //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
@@ -26,9 +26,9 @@ public class Main {
         driver.findElement(By.id("tbUserName")).sendKeys("kmis_octo_726");
         driver.findElement(By.id("tbPassword")).sendKeys("Asdsadas123@");
         WebElement input = driver.findElement(By.xpath("//button[text()= 'Войти']"));
-        input.click();
+        input.click();*/
 
-
+        System.out.println("я хочу понять как делать гребанный коммит");
 
         try {
             driver.get("https://crossbrowsertesting.github.io/drag-and-drop");
