@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\PC-Damu-2\\Desktop\\autoTest\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
@@ -27,6 +27,11 @@ public class Main {
         driver.findElement(By.id("tbPassword")).sendKeys("Asdsadas123@");
         WebElement login = driver.findElement(By.xpath("//button[text()= 'Войти']"));
         login.click();
+
+        WebElement element = (new WebDriverWait(driver, Duration.ofSeconds(20))
+         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@class='auth-service']"))));
+        driver.findElement(By.xpath("//li[@class='auth-service']")).click();
+
 
     }
 }
