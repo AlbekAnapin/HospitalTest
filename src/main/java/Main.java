@@ -29,6 +29,8 @@ public class Main {
         input.click();*/
 
         System.out.println("я хочу понять как делать гребанный коммит");
+        System.out.println("так то вроде ");
+
 
         try {
             driver.get("https://crossbrowsertesting.github.io/drag-and-drop");
