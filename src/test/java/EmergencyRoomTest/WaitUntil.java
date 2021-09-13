@@ -1,3 +1,5 @@
+package EmergencyRoomTest;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +14,6 @@ public class WaitUntil {
 
         WebElement element = (new WebDriverWait(driver, Duration.ofSeconds(20))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator)));
-
 
     }
 }
